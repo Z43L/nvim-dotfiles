@@ -18,7 +18,7 @@ call plug#end()
 let g:coc_global_extensions = ['coc-tsserver', 'coc-pyright', 'coc-json', 'coc-html', 'coc-css', 'coc-lua']
 
 " Atajos de teclado útiles para Coc.nvim
-inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <silent><expr> <CR> pumvisible() ? coc#pum#confirm() : "\<CR>"
 inoremap <silent><expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
